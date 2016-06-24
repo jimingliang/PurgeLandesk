@@ -20,7 +20,7 @@ namespace PurgeLandesk
         {
             int timerellapsed = Convert.ToInt32(ConfigurationManager.AppSettings["timerellapsed"].ToString());
 
-            string scanexes = ConfigurationManager.AppSettings["scan"].ToString();// 123
+            string scanexes = ConfigurationManager.AppSettings["scan"].ToString();
             string[] procs = scanexes.Split(';');
 
             while (true)
