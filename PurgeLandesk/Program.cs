@@ -20,7 +20,7 @@ namespace PurgeLandesk
         {
             int timerellapsed = Convert.ToInt32(ConfigurationManager.AppSettings["timerellapsed"].ToString());
 
-            string scanexes = ConfigurationManager.AppSettings["scan"].ToString();
+            string scanexes = ConfigurationManager.AppSettings["scan"].ToString();// 123
             string[] procs = scanexes.Split(';');
 
             while (true)
@@ -33,7 +33,7 @@ namespace PurgeLandesk
                         {
                             try
                             {
-                                p.Kill();
+                                p.Kill();  
                                 p.WaitForExit();
                             }
                             catch (System.ComponentModel.Win32Exception winException)
